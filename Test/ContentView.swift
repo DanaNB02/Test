@@ -1,3 +1,5 @@
+
+
 //
 //  ContentView.swift
 //  Test
@@ -9,13 +11,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        HStack {
+            Image("riyadh")
+                .resizable()
+                .frame(width: 40,height: 40)
+                .cornerRadius(10)
+            VStack(alignment: .leading){
+                Text("Riyadh")
+                    .font(.title)
+                Text("Capital of Saudi Arabia")
+                    .font(.body)
+            }
+            Text("🇸🇦")
         }
-        .padding()
+       
     }
 }
 
